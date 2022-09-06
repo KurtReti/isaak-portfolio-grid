@@ -158,7 +158,7 @@ body{
     
 }
 
-#nav-content:hover{
+#nav-content:hover, #nav-content:active{
     font-weight: 600;
     cursor: pointer;
 }
