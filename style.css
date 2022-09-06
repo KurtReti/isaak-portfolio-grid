@@ -13,6 +13,8 @@ h5, h1, p,  img{
 
 
 body{
+    overflow: hidden;
+
     display: flex;
      align-items: center;
       justify-content: center; 
@@ -28,6 +30,7 @@ body{
 }
 
 #header-container{
+
     display:grid;
     width: 80%;
     margin-left: 10%;
@@ -51,18 +54,24 @@ body{
 }
 
 #projects{
+    overflow: scroll;
+
     display: grid;
     height: 55%;
-    width: 70%;
+    width: 60%;
     position: relative;
     top: 0%;
-    left: 15%;
+    left: 20%;
     grid-template-areas: 
     "A B C";
     justify-items: center;
     align-items: center;
     justify-content: space-evenly;
     align-content: start;
+}
+
+#projects::-webkit-scrollbar {
+    display: none;
 }
 
 .project{
@@ -156,6 +165,7 @@ body{
 
 #nav-item-1{
     grid-area: A;
+    font-weight: 600;
 }
 #nav-item-2{
     grid-area: B;
@@ -180,17 +190,27 @@ body{
     cursor: pointer;
 }
 
-@media (max-width: 1590px){
+@media (max-width: 1648px){
     #projects{
         grid-template-areas: 
         "A"
         "B"
         "C";
         gap: 10px;
+        height: 100%;
     }
     .nav-item{
         display: none;
     }
+
+    #header-container{
+        padding-top: 100px;
+    }
+
+    #divider{
+        padding-top: 5px;
+    }
+
 }
 
 #divider-title{
