@@ -1,0 +1,207 @@
+html{
+    box-sizing:border-box;
+}
+
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+
+h5, h1, p,  img{
+    margin: 0;
+}
+
+
+
+body{
+    display: flex;
+     align-items: center;
+      justify-content: center; 
+      min-height: 100vh; 
+      flex-direction: column; 
+      font-family: 'Inter', sans-serif;
+}
+
+#container{
+    background-color: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+#header-container{
+    display:grid;
+    width: 80%;
+    margin-left: 10%;
+    height: 8%;
+    grid-template-areas:
+    "A B";
+}
+
+#divider{
+    width: 80%;
+    height: 8%;
+    margin-left: 10%;
+    padding-top: 25px;
+    padding-bottom: 100px;
+
+}
+
+#project-container{
+    width: 100%;
+    height: 85%;
+}
+
+#projects{
+    display: grid;
+    height: 55%;
+    width: 70%;
+    position: relative;
+    top: 0%;
+    left: 15%;
+    grid-template-areas: 
+    "A B C";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: start;
+}
+
+.project{
+    background-color: black;
+    width: 320px;
+    height: 320px;
+    -webkit-filter: brightness(100%);
+    transition: all 1s ease-in-out;
+}
+
+#project-1{
+    grid-area: A;
+    background-image: url(images/who-are-we-screen.png);
+}
+
+#project-2{
+    grid-area: B;
+    background-image: url(images/horifically-beautiful-screen.png);
+}
+
+#project-3{
+    grid-area: C;
+    background-image: url(images/murder-mystery-screen.png);  
+}
+
+#name{
+    display: grid;
+    height: 100%;
+    width: 40%;
+    grid-area: A;
+    justify-self:start;
+    position: relative;
+    grid-template-areas:
+    "A";
+
+}
+
+.name-item{
+    vertical-align: bottom;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+
+
+}
+
+#name-item-1{
+    grid-area: A;
+    font-size: 40px;
+
+}
+
+#name-content{
+    position: absolute;
+    bottom: 0;
+}
+
+#nav{
+    display: grid;
+    height: 100%;
+    width: 40%;
+    grid-area: B;
+    justify-self:end;
+    position: relative;
+    grid-template-areas:
+    "A B C D";
+}
+
+.nav-item{
+    vertical-align: bottom;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+
+#nav-content{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+#nav-content:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#nav-item-1{
+    grid-area: A;
+}
+#nav-item-2{
+    grid-area: B;
+
+}
+#nav-item-3{
+    grid-area: C;
+
+}
+#nav-item-4{
+    grid-area: D;
+
+}
+
+.project:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+
+    cursor: pointer;
+}
+
+@media (max-width: 1590px){
+    #projects{
+        grid-template-areas: 
+        "A"
+        "B"
+        "C";
+        gap: 10px;
+    }
+    .nav-item{
+        display: none;
+    }
+}
+
+#divider-title{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#divider-line{
+    background-color: black;
+    height: 1px;
+
+}
