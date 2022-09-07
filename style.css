@@ -80,7 +80,10 @@ body{
     height: 320px;
     -webkit-filter: brightness(100%);
     transition: all 1s ease-in-out;
+    color: white;
 }
+
+
 
 #project-1{
     grid-area: A;
@@ -100,7 +103,7 @@ body{
 #name{
     display: grid;
     height: 100%;
-    width: 40%;
+    width: 45%;
     grid-area: A;
     justify-self:start;
     position: relative;
@@ -133,7 +136,7 @@ body{
 #nav{
     display: grid;
     height: 100%;
-    width: 40%;
+    width: 45%;
     grid-area: B;
     justify-self:end;
     position: relative;
@@ -190,7 +193,7 @@ body{
     cursor: pointer;
 }
 
-@media (max-width: 1648px){
+@media (max-width: 1500px){
     #projects{
         grid-template-areas: 
         "A"
