@@ -51,6 +51,12 @@ body{
 #project-container{
     width: 100%;
     height: 85%;
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+#project-container.hide{
+    opacity: 0;
 }
 
 #projects{
@@ -58,10 +64,10 @@ body{
 
     display: grid;
     height: 55%;
-    width: 60%;
+    width: 70%;
     position: relative;
     top: 0%;
-    left: 20%;
+    left: 15%;
     grid-template-areas: 
     "A B C";
     justify-items: center;
@@ -170,7 +176,6 @@ body{
 
 #nav-item-1{
     grid-area: A;
-    font-weight: 600;
 }
 #nav-item-2{
     grid-area: B;
@@ -184,6 +189,10 @@ body{
     grid-area: D;
 
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 
 .project:hover {
     -webkit-transition: all 1s ease-in-out;
@@ -195,6 +204,7 @@ body{
     cursor: pointer;
 }
 
+
 @media (max-width: 1500px){
     #projects{
         grid-template-areas: 
@@ -203,6 +213,8 @@ body{
         "C";
         gap: 10px;
         height: 100%;
+        left: 10%;
+        width: 80%;
         padding-bottom: 70%;
     }
 
@@ -241,3 +253,7 @@ body{
 
 }
 
+@keyframes mymove {
+    from {background-color: white;}
+    to {background-color: black;}
+  }
