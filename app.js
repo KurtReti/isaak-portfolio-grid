@@ -17,3 +17,11 @@ function hideProjects() {
     // z.style.backgroundColor = "white";
 
 };
+
+// document.getElementById("showreel-frame").onplay = function(){
+
+//     document.getElementById("header-container"){
+
+//     }
+
+// };
