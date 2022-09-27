@@ -233,6 +233,20 @@ a {
   #divider-title {
     padding-top: 15px;
   }
+
+  .home-flex{
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .home-left{
+    width:100%;
+  }
+
+  .home-right{
+    width:100%;
+  }
+
 }
 
 /* Divider */
